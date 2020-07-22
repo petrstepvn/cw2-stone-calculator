@@ -1,0 +1,352 @@
+{
+	"Grades": [
+		"Normal",
+		"Improved",
+		"Polished",
+		"Refined",
+		"Masterpiece",
+		"Antique",
+		"Magical",
+		"Ethernal",
+		"Epic",
+		"Mystical",
+		"Exotic"
+	],
+	"Stones": {
+		"Stone of Penetration": {
+			"attribute": "Chance for piercing hit",
+			"eqType": "weapon",
+			"refinementLevel": [1,2,3,5,8,9,10,12,14,15,20,23,25],
+			"stoneGrade":	[0,1,2,3,4,5,6,7,8,9,10]
+		},
+		"Stone of Deathblow": {
+			"attribute": "Chance of critical hit",
+			"eqType": "weapon",
+			"refinementLevel": [1,2,3,5,8,9,10,12,14,15,20,23,25],
+			"stoneGrade":	[0,1,2,3,4,5,6,7,8,9,10]
+		},
+		"Stone of Cooldown": {
+			"attribute": "Casting Speed",
+			"eqType": "weapon",
+			"refinementLevel": [5,8,12,17,25,26,27,28,29,30,32,35,40],
+			"stoneGrade":	[0,1,2,3,4,5,6,7,8,9,10]
+		},
+		"Stone against Warriors": {
+			"attribute": "Strong against Warriors",
+			"eqType": "weapon",
+			"refinementLevel": [5,8,12,17,25,26,27,28,29,30,32,35,40],
+			"stoneGrade":	[0,1,2,3,4,5,6,7,8,9,10]
+		},
+		"Stone against Ninjas": {
+			"attribute": "Strong against Ninjas",
+			"eqType": "weapon",
+			"refinementLevel": [5,8,12,17,25,26,27,28,29,30,32,35,40],
+			"stoneGrade":	[0,1,2,3,4,5,6,7,8,9,10]
+		},
+		"Stone against Suras": {
+			"attribute": "Strong against Suras",
+			"eqType": "weapon",
+			"refinementLevel": [5,8,12,17,25,26,27,28,29,30,32,35,40],
+			"stoneGrade":	[0,1,2,3,4,5,6,7,8,9,10]
+		},
+		"Stone against Shamans": {
+			"attribute": "Strong against Shamans",
+			"eqType": "weapon",
+			"refinementLevel": [5,8,12,17,25,26,27,28,29,30,32,35,40],
+			"stoneGrade":	[0,1,2,3,4,5,6,7,8,9,10]
+		},
+		"Stone of Monsters": {
+			"attribute": "Strong against Monsters",
+			"eqType": "weapon",
+			"refinementLevel": [1,2,3,5,8,11,13,15,17,19,25,30,35],
+			"stoneGrade":	[0,2,4,6,8,10,12,14,16,18,20]
+		},
+		"Stone of Evasion": {
+			"attribute": "Chance to block a close-combat attack",
+			"eqType": "armor",
+			"refinementLevel": [1,2,3,5,8,9,10,11,12,13,14,17,20],
+			"stoneGrade":	[0,1,2,3,4,5,6,7,8,9,10]
+		},
+		"Stone of Ducking": {
+			"attribute": "Chance to avoid arrows",
+			"eqType": "armor",
+			"refinementLevel": [1,2,3,5,8,10,15,20,22,24,26,28,35],
+			"stoneGrade":	[0,1,2,3,4,5,6,7,8,9,10]
+		},
+		"Stone of Magic": {
+			"attribute": "Damage will be absorbed by SP",
+			"eqType": "armor",
+			"refinementLevel": [1,2,3,5,8,9,10,11,12,13,17,20,25],
+			"stoneGrade":	[0,1,2,3,4,5,6,7,8,9,10]
+		},
+		"Stone of Vitality": {
+			"attribute": "Max. HP",
+			"eqType": "armor",
+			"refinementLevel": [250,500,750,1000,1250,1500,2000,2500,3000,3500,5000,6000,8000],
+			"stoneGrade":	[0,1000,2000,3000,4000,5000,6000,7000,8000,9000,10000]
+		},
+		"Stone of Defence": {
+			"attribute": "Defense",
+			"eqType": "armor",
+			"refinementLevel": [2,4,6,10,15,18,23,25,30,35,50,100,150],
+			"stoneGrade":	[0,5,10,15,20,25,30,35,40,45,50]
+		},
+		"Stone of Haste": {
+			"attribute": "Movement Speed",
+			"eqType": "armor",
+			"attributeExotic": "Speed of Light",
+			"refinementLevel": [5,10,15,20,30,33,36,40,43,46,49,52,55],
+			"stoneGrade":	[0,5,10,15,20,25,30,35,40,45,50]
+		},
+		"Stone of Agility": {
+			"attribute": "Resistance against critical hits",
+			"eqType": "armor",
+			"refinementLevel": [12,16,20,24,28,32,36,40,44,48,52,56,60],
+			"stoneGrade":	[0,4,8,12,16,20,24,28,32,36,40]
+		},
+		"Stone of Empower": {
+			"attribute": "Spirit Stone Reinforcement",
+			"eqType": "weapon armor belt ring",
+			"refinementLevel": [1,1,1,2,2,2,3,3,3,4,4,4,5],
+			"stoneGrade":	[0,0,1,1,2,2,3,3,4,4,5]
+		},
+		"Stone of Recovery": {
+			"attribute": "HP Regeneration",
+			"eqType": "ring",
+			"refinementLevel": [1,3,6,9,12,15,20,25,30,35,40,45,50],
+			"stoneGrade": [0,5,10,15,20,25,30,35,40,45,50]
+		},
+		"Stone of Silence": {
+			"attribute": "SP Regeneration",
+			"eqType": "ring",
+			"refinementLevel": [1,3,6,9,12,15,20,25,30,35,40,45,50],
+			"stoneGrade": [0,5,10,15,20,25,30,35,40,45,50]
+		},
+		"Stone of Frost": {
+			"attribute": "Ice Resistance",
+			"eqType": "ring",
+			"refinementLevel": [2,3,4,5,6,9,12,15,18,21,24,27,30],
+			"stoneGrade": [0,1,2,3,4,5,6,7,8,9,10]
+		},
+		"Stone of the Gladiator": {
+			"attribute": "Strong against Half Humans",
+			"eqType": "ring",
+			"refinementLevel": [2,3,4,5,6,9,12,15,18,21,24,27,30],
+			"stoneGrade": [0,2,4,6,8,10,12,14,16,18,20]
+		},
+		"Stone of Leech": {
+			"attribute": "Damage will be absorbed by HP",
+			"eqType": "ring",
+			"refinementLevel": [1,2,3,4,5,6,8,10,12,14,16,18,20],
+			"stoneGrade": [0,2,4,6,8,10,12,14,16,18,20]
+		},
+		"Stone of the Hunter": {
+			"attribute": "Strong against Monsters",
+			"eqType": "ring",
+			"refinementLevel": [4,7,10,13,16,19,22,25,28,31,34,37,40],
+			"stoneGrade": [0,3,6,9,12,15,18,21,24,27,30]
+		},
+		"Stone of Power": {
+			"attribute": "Attack Value",
+			"eqType": "belt",
+			"refinementLevel": [20,40,60,80,100,120,140,150,160,170,180,190,200],
+			"stoneGrade": [0,30,60,90,120,150,180,210,240,270,300]
+		},
+		"Stone of Wildness": {
+			"attribute": "Pet Attributes",
+			"eqType": "belt",
+			"refinementLevel": [2,4,6,8,10,15,20,25,30,35,40,45,50],
+			"stoneGrade": [0,2,4,6,8,10,12,14,16,18,20]
+		},
+		"Stone of the Snake": {
+			"attribute": "Poison Resistance",
+			"eqType": "belt",
+			"refinementLevel": [2,3,4,5,6,9,12,15,18,21,24,27,30],
+			"stoneGrade": [0,1,2,3,4,5,6,7,8,9,10]
+		},
+		"Stone of Fury": {
+			"attribute": "Skill Damage",
+			"eqType": "belt",
+			"refinementLevel": [2,3,4,5,6,7,9,11,13,16,19,22,25],
+			"stoneGrade": [0,2,4,6,8,10,12,14,16,18,20]
+		},
+		"Stone of Might": {
+			"attribute": "Average Damage",
+			"eqType": "belt",
+			"refinementLevel": [2,3,4,5,6,7,9,11,13,16,19,22,25],
+			"stoneGrade": [0,2,4,6,8,10,12,14,16,18,20]
+		},
+		"Stone of Nature": {
+			"attribute": "Earth Resistance",
+			"eqType": "belt",
+			"refinementLevel": [2,3,4,6,8,9,12,15,18,21,24,27,30],
+			"stoneGrade": [0,1,2,3,4,5,6,7,8,9,10]
+		},
+		"Stone of Universality": {
+			"attribute": "Universality",
+			"eqType": "ring",
+			"refinementLevel": [2,3,4,6,7,8,9,10,12,14,16,18,20],
+			"stoneGrade": [0,2,4,6,8,10,12,14,16,18,20]
+		},
+		"Stone of Moon": {
+			"attribute": "Magic Power",
+			"eqType": "belt",
+			"refinementLevel": [2,3,4,6,8,9,12,15,18,21,24,27,30],
+			"stoneGrade": [0,3,6,9,12,15,18,21,24,27,30]
+		},
+		"Stone of Luck": {
+			"attribute": "Resistance against critical hits",
+			"eqType": "ring",
+			"refinementLevel": [1,2,3,4,5,6,7,8,9,10,12,14,15],
+			"stoneGrade": [0,2,4,6,8,10,12,14,16,18,20]
+		}
+	},
+	"Infected": {
+		"Strong against Monster": {
+			"base": [1,2,2,3,3,4,5,6,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,25,30,35,40,45,50,55,60],
+			"multEq": 3,
+			"multStone": 1
+		},
+		"Strong against Half Humans": {
+			"base": [1,2,2,3,3,4,4,5,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,25,30,35,40,45,50,55],
+			"multEq": 1,
+			"multStone": 1
+		},
+		"Max. HP": {
+			"base": [1000,2000,2000,3000,3000,4000,4000,5000,5000,6000,7000,8000,9000,10000,11000,12000,13000,14000,15000,16000,17000,18000,19000,20000,30000,40000,50000,60000,70000,80000,100000],
+			"multEq": 1000,
+			"multStone": 1
+		},
+		"Max. SP": {
+			"base": [1000,2000,2000,3000,3000,4000,4000,5000,5000,6000,7000,8000,9000,10000,11000,12000,13000,14000,15000,16000,17000,18000,19000,20000,30000,40000,50000,60000,70000,80000,100000],
+			"multEq": 1000,
+			"multStone": 1
+		},
+		"Thorns": {
+			"base": [100,125,150,175,200,225,250,275,300,325,350,400,450,500,550,600,650,700,750,800,850,900,950,1000,1500,2000,2500,3000,3500,4000,5000],
+			"multEq": 50,
+			"multStone": 25
+		},
+		"Pet Attributes": {
+			"base": [1,2,2,3,3,4,4,5,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,25,30,35,40,45,50,55],
+			"multEq": 1,
+			"multStone": 1
+		},
+		"Average Damage": {
+			"base": [1,2,2,3,3,4,4,5,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,25,30,35,40,45,50,55],
+			"multEq": 3,
+			"multStone": 1
+		},
+		"Skill Damage": {
+			"base": [1,2,2,3,3,4,4,5,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,25,30,35,40,45,50,55],
+			"multEq": 3,
+			"multStone": 1
+		},
+		"Magic-Power": {
+			"base": [1,2,2,3,3,4,4,5,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,25,30,35,40,45,50,55],
+			"multEq": 2,
+			"multStone": 1
+		},
+		"increased ore amount": {
+			"base": [1,2,2,3,3,4,4,5,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,25,30,35,40,45,50,55],
+			"multEq": 1,
+			"multStone": 1
+		},
+		"chance to rob mana": {
+			"base": [1,2,2,3,3,4,4,5,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,25,30,35,40,45,50,55],
+			"multEq": 1,
+			"multStone": 1
+		},
+		"Strong against Metinstones": {
+			"base": [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,22,24,26,28,30,40,50,60,70,80,90,100],
+			"multEq": 3,
+			"multStone": 1
+		},
+		"Attack Value": {
+			"base": [20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200,220,240,260,280,300,400,500,600,700,800,900,1000],
+			"multEq": 10,
+			"multStone": 10
+		},
+		"Defense": {
+			"base": [20,30,40,50,60,70,80,90,100,110,120,130,140,150,160,170,180,190,200,220,240,260,280,300,400,500,600,700,800,900,1000],
+			"multEq": 10,
+			"multStone": 10
+		},
+		"HP Regeneration": {
+			"base": [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,22,24,26,28,30,40,50,60,70,80,90,100],
+			"multEq": 1,
+			"multStone": 1
+		},
+		"SP Regeneration": {
+			"base": [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,22,24,26,28,30,40,50,60,70,80,90,100],
+			"multEq": 1,
+			"multStone": 1
+		},
+		"Slowing chance": {
+			"base": [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,22,24,26,28,30,40,50,60,70,80,90,100],
+			"multEq": 1,
+			"multStone": 1
+		},
+		"Max. Endurance": {
+			"base": [100,125,150,175,200,225,250,275,300,325,350,400,450,500,550,600,650,700,750,800,850,900,950,1000,1500,2000,2500,3000,3500,4000,5000],
+			"multEq": 50,
+			"multStone": 25
+		},
+		"Speed of Light": {
+			"base": [2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,22,24,26,28,30,40,50,60,70,80,90,100],
+			"multEq": 1,
+			"multStone": 1
+		},
+		"Thunder Damage": {
+			"base": [1,2,2,3,3,4,4,5,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,25,30,35,40,45,50,55],
+			"multEq": 1,
+			"multStone": 1
+		},
+		"Poison Damage": {
+			"base": [1,2,2,3,3,4,4,5,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,25,30,35,40,45,50,55],
+			"multEq": 2,
+			"multStone": 1
+		},
+		"Armor": {
+			"base": [5,10,20,30,40,50,75,100,125,150,175,200,250,300,350,400,450,500,550,600,650,700,750,800,900,1000,1100,1200,1300,1400,1500],
+			"multEq": 10,
+			"multStone": 25
+		},
+		"Mount Attributes": {
+			"base": [1,1,2,2,3,3,4,4,5,5,6,6,7,7,8,8,9,9,10,10,11,11,15,20,25,30,35,40,45,50,55],
+			"multEq": 1,
+			"multStone": 1
+		},
+		"Portal Damage": {
+			"base": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,25,30,35,40,45,50,55,60,65,70,75],
+			"multEq": 3,
+			"multStone": 1
+		},
+		"Universality": {
+			"base": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,23,26,29,32,35,40,45,50,55,60,65],
+			"multEq": 1,
+			"multStone": 1
+		},
+		"Critical Hit Damage": {
+			"base": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,23,26,29,32,35,40,45,50,55,60,65],
+			"multEq": 1,
+			"multStone": 1
+		},
+		"Bonus-Experience": {
+			"base": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,23,26,29,32,35,40,45,50,55,60,65],
+			"multEq": 1,
+			"multStone": 1
+		},
+		"Chance of critical hit": {
+			"base": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,23,26,29,32,35,40,45,50,55,60,65],
+			"multEq": 1,
+			"multStone": 1
+		},
+		"Chance for piercing Hits": {
+			"base": [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,23,26,29,32,35,40,45,50,55,60,65],
+			"multEq": 1,
+			"multStone": 1
+		}
+	},
+	"InfectedExpPerLevel": [100,250,500,1000,2500,5000,7500,10000,15000,20000,25000,30000,35000,40000,45000,50000,75000,100000,250000,500000,750000,1000000,1250000,2500000,5000000,5500000,6000000,6500000,7000000,7500000]
+}
