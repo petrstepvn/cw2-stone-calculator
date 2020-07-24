@@ -64,6 +64,7 @@ option {
 .eqType-wrapper {
   display: flex;
   flex-wrap: wrap;
+  padding-top: 1rem;
   & label {
     font-size: v.$font-m;
     color: v.$text-primary;

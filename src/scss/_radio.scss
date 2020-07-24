@@ -1,0 +1,30 @@
+@use './variables' as v;
+
+[type='radio'] {
+	display: none;
+}
+
+[type='radio'] + label {
+	position: relative;
+	padding-left: 3rem !important;
+	padding-bottom: 0.5rem;
+	
+}
+[type='radio'] + label:before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 16px;
+	height: 16px;
+	border: 2px solid v.$text-secondary;
+	border-radius: 50%;
+	// background: v.$fg-primary
+
+}
+
+[type='radio']:checked + label:before {
+	background: v.$fg-primary
+
+}

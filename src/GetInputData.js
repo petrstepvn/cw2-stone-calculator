@@ -4,16 +4,16 @@ import { inputElementsDOM, inputData } from './index';
 export const getInputData = (e) => {
 	const { Grades } = Data;
 	const [
-		stoneType,
 		refinementLevel,
 		refinementLevelSlider,
+		infectedLevel,
+		infectedLevelSlider,
+		stoneType,
 		eqGrade,
 		stoneGrade,
 		empower,
 		infected,
 		infectedAttribute,
-		infectedLevel,
-		infectedLevelSlider,
 	] = inputElementsDOM;
 
 	if (!e) {

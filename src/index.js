@@ -7,16 +7,16 @@ import { calculateResult } from './CalculateResult';
 import { updateInputElements, updateResultsDOM } from './UpdateDOM';
 
 const inputID = [
-	'stoneType',
 	'refinementLevel',
 	'refinementLevelSlider',
+	'infectedLevel',
+	'infectedLevelSlider',
+	'stoneType',
 	'eqGrade',
 	'stoneGrade',
 	'empower',
 	'infected',
 	'infectedAttribute',
-	'infectedLevel',
-	'infectedLevelSlider',
 ];
 
 export const inputData = {};
@@ -39,8 +39,13 @@ export const resultData = {
 export const inputElementsDOM = inputID.map((id) =>
 	document.getElementById(id)
 );
-inputElementsDOM.forEach((element) =>
+
+
+inputElementsDOM.slice(0,4).forEach((element) =>
 	element.addEventListener('input', (e) => update(e))
+);
+inputElementsDOM.slice(4).forEach((element) =>
+	element.addEventListener('change', (e) => update(e))
 );
 
 export const resultElementsDOM = Object.keys(resultData).map((id) =>
