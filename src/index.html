@@ -18,7 +18,6 @@
               type="radio"
               id="eqTypeWeapon"
               value="eqTypeWeapon"
-              class="radio-selected"
               checked
               />
               <label for="eqTypeWeapon">Weapon</label>
@@ -45,7 +44,7 @@
         <div class="form-group">
           <label for="refinementLevel">Refinement Level</label>
         <div class="level-wrapper">
-          <input type="number" id="refinementLevel" />
+          <input type="number" id="refinementLevel" value="12" />
           <input
             type="range"
             id="refinementLevelSlider"
@@ -66,14 +65,14 @@
       <div class="form-group">
         <div class="form-group columns-2 no-border center">
           <label for="empower">Exotic Empower</label>
-          <input type="checkbox" id="empower"></input>
+          <input type="checkbox" id="empower" checked></input>
         </div>
         <div class="form-group columns-2 no-border center">
           <label for="infected">Infected</label>
-          <input type="checkbox" id="infected"></input>
+          <input type="checkbox" id="infected" checked></input>
         </div>
       </div>
-      <div class="infectedOuterWrapper disabled">
+      <div class="infectedOuterWrapper">
         <div class="form-group">
           <label for="infectedAttribute">Infected Attribute</label>
           <select id="infectedAttribute"></select>
@@ -91,7 +90,7 @@
           />
         </div>
         <div class="infectedLevel-wrapper2">
-          <p class="infectedLevelSmall-text">Required XP for level <span id="infectedLevelSmall">25</span>:</p>
+          <p class="infectedLevelSmall-text">Required XP for selected level:</p>
           <span id="infectedLevelXp">44 211 850</span>
         </div>
       </div>
@@ -129,25 +128,25 @@
           <div class="result-wrapper"> 
             <div class="result-label">Infected Attribute</div>
             <div class="result-attribute-wrapper">
-              <div class="result-title" id="SecondaryAttribute">Strong against Half Humans</div>
-              <div class="result-value" id="SecondaryValue">105%</div>
+              <div class="result-title" id="SecondaryAttribute"></div>
+              <div class="result-value" id="SecondaryValue"></div>
             </div>
           </div>
           <div class="detail-wrapper">
             <div class="detail-title">Infected Level</div>
-            <div class="detail-value" id="SecondaryInfectedLevel" >30</div>
+            <div class="detail-value" id="SecondaryInfectedLevel"></div>
           </div>
           <div class="detail-wrapper">
             <div class="detail-title">EQ Grade</div>
-            <div class="detail-value" id="SecondaryEqGrade" >30</div>
+            <div class="detail-value" id="SecondaryEqGrade"></div>
           </div>
           <div class="detail-wrapper">
             <div class="detail-title" >Stone Grade</div>
-            <div class="detail-value" id="SecondaryStoneGrade" >30</div>
+            <div class="detail-value" id="SecondaryStoneGrade"></div>
           </div>
           <div class="detail-wrapper">
             <div class="detail-title" >Exotic Empower</div>
-            <div class="detail-value" id="SecondaryEmpower" >30</div>
+            <div class="detail-value" id="SecondaryEmpower"></div>
           </div>
         </div>
       </section>
