@@ -162,6 +162,8 @@ $ie-bottom-track-color: darken($track-color, $contrast) !default;
     &::-ms-fill-lower,
     &::-ms-fill-upper {
       cursor: not-allowed;
+
+      
     }
   }
 }

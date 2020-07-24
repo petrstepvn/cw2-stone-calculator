@@ -1,8 +1,12 @@
 import Data from './data.json';
+import { update } from './index';
 const radioDOM = document.querySelectorAll('[type="radio"]');
 const selectDOM = document.querySelectorAll('select');
 radioDOM.forEach((element) =>
-	element.addEventListener('change', (e) => fillFilteredAttributeDropdowns(e))
+	element.addEventListener('change', (e) => {
+		fillFilteredAttributeDropdowns(e);
+		update();
+	})
 );
 
 const fill = (options, element) => {
