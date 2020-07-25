@@ -99,7 +99,8 @@ section {
 }
 
 .section-top {
-  width: v.$width-top;
+  max-width: v.$width-top;
+  padding: 0 1rem;
 }
 .section-result {
   background: v.$bg-secondary;
@@ -107,9 +108,9 @@ section {
   flex-grow: 1;
 }
 .section-result-content-wrapper {
-  width: v.$width-result;
+  max-width: v.$width-result;
+  padding: 0 1rem 7rem;
   margin: auto;
-  padding-bottom: 7rem;
 }
 
 .infectedLevel-wrapper2 {
