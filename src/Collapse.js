@@ -47,19 +47,6 @@ function expandSection(element) {
 }
 
 const infectedSwitchDOM = document.getElementById('infected');
-const btnToggleDOM = document.getElementById('toggle');
-btnToggleDOM.addEventListener('click', (e) => {
-  e.preventDefault();
-  const section = document.querySelector('.collapsible2');
-  const isCollapsed = section.getAttribute('data-collapsed') === 'true';
-
-  if (isCollapsed) {
-    expandSection(section);
-    section.setAttribute('data-collapsed', 'false');
-  } else {
-    collapseSection(section);
-  }
-});
 infectedSwitchDOM.addEventListener('click', () => {
   const sections = document.querySelectorAll('.collapsible');
   const isCollapsed = sections[0].getAttribute('data-collapsed') === 'true';
