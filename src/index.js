@@ -59,15 +59,7 @@ export const update = (e) => {
 };
 update();
 
-// 	document.getElementById('infectedLevelSmall').textContent = inputData.infectedLevel;
-
-// 	requiredXp(Data, inputData);
-
-// 	const infWrapper = document.querySelector('.infectedOuterWrapper');
-// 	inputData.infected ? infWrapper.classList.remove('disabled') : infWrapper.classList.add('disabled');
-// };
 document.querySelectorAll('.accordion_button').forEach((button) => {
-  console.log('xdd');
   button.addEventListener('click', (e) => {
     e.preventDefault();
     const accordionContent = button.nextElementSibling;
