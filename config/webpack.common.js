@@ -4,14 +4,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: ['./src', './src/scss/main.scss'],
   output: {
-    filename: 'bundle.[contentHash].js',
+    filename: 'bundle.js',
     // One folder up
     path: path.resolve(path.join(__dirname, '..'), 'dist'),
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: 'index.[contenthash].html',
+      // filename: 'index.[contenthash].html',
     }),
   ],
   module: {
