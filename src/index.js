@@ -1,7 +1,6 @@
 // import 'promise-polyfill/src/polyfill';
 import './Dropdowns';
 import './Collapse';
-import './Accordion';
 
 import { getInputData } from './GetInputData';
 import { calculateResult } from './CalculateResult';
