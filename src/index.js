@@ -59,7 +59,7 @@ export const update = (e) => {
 };
 update();
 
-document.querySelectorAll('.accordion_button').forEach((button) => {
+document.querySelectorAll('.accordion__button').forEach((button) => {
   button.addEventListener('click', (e) => {
     e.preventDefault();
     const accordionContent = button.nextElementSibling;
