@@ -109,7 +109,7 @@ section {
 .section-result-content-wrapper {
   width: v.$width-result;
   margin: auto;
-  padding-bottom: 5rem;
+  padding-bottom: 7rem;
 }
 
 .infectedLevel-wrapper2 {
@@ -225,4 +225,26 @@ label {
   overflow:hidden;
   transition:height 0.2s ease-out;
   height:auto;
+}
+
+.links {
+  margin-top: 40px;
+  & ul {
+    padding-left: 35px;
+  }
+  & li {
+    height: 25px;
+  }
+  & a { 
+    color: white;
+    height: 25px;
+    &:hover {
+      color: darken(white, 25);
+    }
+  }
+  & img {
+    height: 100%;
+    padding-right: .7rem;
+    vertical-align: middle;
+  }
 }
