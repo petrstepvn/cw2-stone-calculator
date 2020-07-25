@@ -4,6 +4,9 @@
 @use './radio';
 @use './variables' as v;
 
+// $chevron: url('../images/iconmonstr-angel-down-thin.svg');
+$chevron: url('../images/iconmonstr-arrow-65.svg');
+
 h1 {
   text-align: center;
   margin: 2rem 0 3rem;
@@ -93,6 +96,9 @@ select {
   input[type='range'] {
     flex-grow: 1;
   }
+}
+input[type='number'] {
+  -moz-appearance: textfield;
 }
 section {
   margin: auto;
@@ -217,6 +223,26 @@ label {
   cursor: pointer;
 }
 
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.custom-select {
+  position: relative;
+  width: 100%;
+}
+.custom-arrow {
+  background-image: $chevron;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 4rem;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  transform: scale(0.7);
+  pointer-events: none;
+}
+
 .infectedOuterWrapper.disabled {
   opacity: 0.4;
   pointer-events: none;
@@ -293,7 +319,8 @@ label {
   }
 
   &--active:after {
-    transform: translateY(-50%) rotate(90deg);
+    content: '\203A';
+    transform: translateY(-50%) rotate(-90deg);
   }
 }
 
