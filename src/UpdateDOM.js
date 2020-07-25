@@ -29,6 +29,12 @@ export const updateInputElements = () => {
 
   const infectedLevelSmall = document.querySelectorAll('.infectedLevelSmall');
   const infectedLevelXpDOM = document.getElementById('infectedLevelXp');
+  const infectedLevelXpFragmentDOM = document.getElementById(
+    'infectedLevelXpFragment'
+  );
+  const infectedLevelXpTotalFragmentDOM = document.getElementById(
+    'infectedLevelXpTotalFragment'
+  );
   const infectedLevelXpTotalDOM = document.getElementById(
     'infectedLevelXpTotal'
   );
@@ -37,9 +43,15 @@ export const updateInputElements = () => {
     0,
     infectedLevel + 1
   ).reduce((acc, curr) => acc + curr);
+  const infFragment = Math.ceil(requiredXp / 2000);
+  const infFragmentTotal = Math.ceil(requiredXpTotal / 2000);
+  infectedLevelSmall.forEach((el) => (el.textContent = infectedLevel));
   infectedLevelXpDOM.textContent = thousandSeparator(requiredXp);
   infectedLevelXpTotalDOM.textContent = thousandSeparator(requiredXpTotal);
-  infectedLevelSmall.forEach((el) => (el.textContent = infectedLevel));
+  infectedLevelXpFragmentDOM.textContent = thousandSeparator(infFragment);
+  infectedLevelXpTotalFragmentDOM.textContent = thousandSeparator(
+    infFragmentTotal
+  );
 };
 
 export const updateResultsDOM = () => {
