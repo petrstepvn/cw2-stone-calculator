@@ -39,7 +39,7 @@ export const updateInputElements = () => {
   ).reduce((acc, curr) => acc + curr);
   infectedLevelXpDOM.textContent = thousandSeparator(requiredXp);
   infectedLevelXpTotalDOM.textContent = thousandSeparator(requiredXpTotal);
-  infectedLevelSmall.forEach((el) => (el.textContent = infectedLevel + 1));
+  infectedLevelSmall.forEach((el) => (el.textContent = infectedLevel));
 };
 
 export const updateResultsDOM = () => {
