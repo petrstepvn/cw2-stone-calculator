@@ -1,292 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CW2 Stone Calculator</title>
-  </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CW2 Stone Calculator</title>
+	</head>
 
-  <body>
-    <main>
-      <h1 class="header">CW2 Stone Calculator</h1>
-      <section class="section-top">
-        <form class="form">
-          <div class="form-group">
-            <label>EQ Type</label>
-            <div class="eqType-wrapper">
-              <div class="radio-wrapper">
-                <input
-                  name="eqType"
-                  type="radio"
-                  id="eqTypeWeapon"
-                  value="eqTypeWeapon"
-                  checked
-                />
-                <label for="eqTypeWeapon">Weapon</label>
-              </div>
-              <div class="radio-wrapper">
-                <input
-                  name="eqType"
-                  type="radio"
-                  id="eqTypeArmor"
-                  value="eqTypeArmor"
-                />
-                <label for="eqTypeArmor">Armor</label>
-              </div>
-              <div class="radio-wrapper">
-                <input
-                  name="eqType"
-                  type="radio"
-                  id="eqTypeBelt"
-                  value="eqTypeBelt"
-                />
-                <label for="eqTypeBelt">Belt</label>
-              </div>
-              <div class="radio-wrapper">
-                <input
-                  name="eqType"
-                  type="radio"
-                  id="eqTypeRing"
-                  value="eqTypeRing"
-                />
-                <label for="eqTypeRing">Blessed Ring</label>
-              </div>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="stoneType">Stone Type</label>
-            <div class="custom-select">
-              <select id="stoneType"> </select>
-              <span class="custom-arrow"></span>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="refinementLevel">Refinement Level</label>
-            <div class="level-wrapper">
-              <input
-                type="number"
-                id="refinementLevel"
-                min="0"
-                max="12"
-                value="12"
-              />
-              <input
-                type="range"
-                id="refinementLevelSlider"
-                min="0"
-                max="12"
-                value="12"
-              />
-            </div>
-            <span class="refinementLevelNote"
-              >Refinement Level can be changed only when Stone Grade is
-              Normal</span
-            >
-          </div>
-          <div class="form-group columns-2">
-            <label for="eqGrade">EQ Grade</label>
-            <div class="custom-select">
-              <select id="eqGrade"> </select>
-              <span class="custom-arrow"></span>
-            </div>
-          </div>
-          <div class="form-group columns-2">
-            <label for="stoneGrade">Stone Grade</label>
-            <div class="custom-select">
-              <select id="stoneGrade"> </select>
-              <span class="custom-arrow"></span>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="form-group columns-2 no-border center">
-              <label for="empower">Exotic Empower</label>
-              <input type="checkbox" id="empower" checked />
-            </div>
-            <div class="form-group columns-2 no-border center">
-              <label for="infected">Infected</label>
-              <input type="checkbox" id="infected" checked />
-            </div>
-          </div>
-          <div class="infectedOuterWrapper collapsible">
-            <div class="form-group">
-              <label for="infectedAttribute">Infected Attribute</label>
-              <div class="custom-select">
-                <select id="infectedAttribute"> </select>
-                <span class="custom-arrow"></span>
-              </div>
-            </div>
-            <div class="form-group no-border">
-              <label for="infectedLevel">Infected Level</label>
-              <div class="level-wrapper">
-                <input
-                  type="number"
-                  id="infectedLevel"
-                  min="0"
-                  max="30"
-                  value="20"
-                />
-                <input
-                  type="range"
-                  id="infectedLevelSlider"
-                  min="0"
-                  max="30"
-                  value="20"
-                />
-              </div>
-              <div class="infectedLevel-wrapper2">
-                <p class="infectedLevelSmall-text">
-                  Required XP for level <span class="infectedLevelSmall"></span>
-                </p>
-                <span class="infectedLevelRight" id="infectedLevelXp"></span>
-              </div>
-              <div class="infectedLevel-wrapper2">
-                <p class="infectedLevelSmall-text">
-                  Required XP for levels 0 -
-                  <span class="infectedLevelSmall"></span>
-                </p>
-                <span
-                  class="infectedLevelRight"
-                  id="infectedLevelXpTotal"
-                ></span>
-              </div>
-              <div class="infectedLevel-wrapper2">
-                <p class="infectedLevelSmall-text">
-                  Required XP for levels
-                  <span class="infectedLevelSmall"></span> - 30
-                </p>
-                <span
-                  class="infectedLevelRight"
-                  id="infectedLevelXpTotalEnd"
-                ></span>
-              </div>
-              <div class="accordion">
-                <button class="accordion__button">show more</button>
-                <div class="accordion__content">
-                  <div class="infectedLevel-wrapper2">
-                    <p class="infectedLevelSmall-text">
-                      Average amount of Fragment Portals for level
-                      <span
-                        class="infectedLevelSmall infectedLevelSmallFragment"
-                      ></span>
-                    </p>
-                    <span
-                      class="infectedLevelRight"
-                      id="infectedLevelXpFragment"
-                    ></span>
-                  </div>
-                  <div class="infectedLevel-wrapper2">
-                    <p class="infectedLevelSmall-text">
-                      Average amount of Fragment Portals for levels 0 -
-                      <span
-                        class="infectedLevelSmall infectedLevelSmallFragment"
-                      ></span>
-                    </p>
-                    <span
-                      class="infectedLevelRight"
-                      id="infectedLevelXpFragmentTotal"
-                    ></span>
-                  </div>
-                  <div class="infectedLevel-wrapper2">
-                    <p class="infectedLevelSmall-text">
-                      Average amount of Fragment Portals for levels
-                      <span
-                        class="infectedLevelSmall infectedLevelSmallFragment"
-                      ></span>
-                      - 30
-                    </p>
-                    <span
-                      class="infectedLevelRight"
-                      id="infectedLevelXpFragmentTotalEnd"
-                    ></span>
-                  </div>
-                  <div class="infectedLevel-wrapper2">
-                    <p style="width: 100%;" class="infectedLevelSmall-text">
-                      Fragment Portal has 2000 monsters on average. 1 monster =
-                      1 xp.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </form>
-      </section>
-      <section class="section-result">
-        <div class="section-result-content-wrapper">
-          <div class="result-outer-wrapper">
-            <div class="result-wrapper">
-              <div class="result-label">Primary Attribute</div>
-              <div class="result-attribute-wrapper">
-                <div class="result-title" id="PrimaryAttribute"></div>
-                <div class="result-value" id="PrimaryValue"></div>
-              </div>
-            </div>
-            <div class="detail-wrapper">
-              <div class="detail-title">Refinement Level</div>
-              <div class="detail-value" id="PrimaryRefinementLevel"></div>
-            </div>
-            <div class="detail-wrapper">
-              <div class="detail-title">EQ Grade</div>
-              <div class="detail-value" id="PrimaryEqGrade"></div>
-            </div>
-            <div class="detail-wrapper">
-              <div class="detail-title">Stone Grade</div>
-              <div class="detail-value" id="PrimaryStoneGrade"></div>
-            </div>
-            <div class="detail-wrapper">
-              <div class="detail-title">Exotic Empower</div>
-              <div class="detail-value" id="PrimaryEmpower"></div>
-            </div>
-          </div>
-          <div class="result-outer-wrapper collapsible">
-            <div class="result-wrapper">
-              <div class="result-label">Infected Attribute</div>
-              <div class="result-attribute-wrapper">
-                <div class="result-title" id="SecondaryAttribute"></div>
-                <div class="result-value" id="SecondaryValue"></div>
-              </div>
-            </div>
-            <div class="detail-wrapper">
-              <div class="detail-title">Infected Level</div>
-              <div class="detail-value" id="SecondaryInfectedLevel"></div>
-            </div>
-            <div class="detail-wrapper">
-              <div class="detail-title">EQ Grade</div>
-              <div class="detail-value" id="SecondaryEqGrade"></div>
-            </div>
-            <div class="detail-wrapper">
-              <div class="detail-title">Stone Grade</div>
-              <div class="detail-value" id="SecondaryStoneGrade"></div>
-            </div>
-            <div class="detail-wrapper">
-              <div class="detail-title">Exotic Empower</div>
-              <div class="detail-value" id="SecondaryEmpower"></div>
-            </div>
-          </div>
-          <div class="links">
-            <ul>
-              <li>
-                <a
-                  href="https://github.com/petrstepvn/cw2-stone-calculator"
-                  target="_blank"
-                  rel="noopener nofollow"
-                >
-                  <img src="./images/iconmonstr-github-1-32.png" alt="github" />
-                  <span>Source code</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://celestialworldv2.fandom.com/wiki/Spirit_Stone_system"
-                  target="_blank"
-                  rel="noopener nofollow"
-                  >More info on Wiki</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </main>
-  </body>
+	<body>
+		<main>
+			<h1 class="header">CW2 Stone Calculator</h1>
+			<section class="section-top">
+				<form class="form">
+					<div class="form-group">
+						<label>EQ Type</label>
+						<div class="eqType-wrapper">
+							<div class="radio-wrapper">
+								<input
+									name="eqType"
+									type="radio"
+									id="eqTypeWeapon"
+									value="eqTypeWeapon"
+									checked
+								/>
+								<label for="eqTypeWeapon">Weapon</label>
+							</div>
+							<div class="radio-wrapper">
+								<input
+									name="eqType"
+									type="radio"
+									id="eqTypeArmor"
+									value="eqTypeArmor"
+								/>
+								<label for="eqTypeArmor">Armor</label>
+							</div>
+							<div class="radio-wrapper">
+								<input
+									name="eqType"
+									type="radio"
+									id="eqTypeBelt"
+									value="eqTypeBelt"
+								/>
+								<label for="eqTypeBelt">Belt</label>
+							</div>
+							<div class="radio-wrapper">
+								<input
+									name="eqType"
+									type="radio"
+									id="eqTypeRing"
+									value="eqTypeRing"
+								/>
+								<label for="eqTypeRing">Blessed Ring</label>
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="stoneType">Stone Type</label>
+						<div class="custom-select">
+							<select id="stoneType"> </select>
+							<span class="custom-arrow"></span>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="refinementLevel">Refinement Level</label>
+						<div class="level-wrapper">
+							<input
+								type="number"
+								id="refinementLevel"
+								min="0"
+								max="12"
+								value="12"
+							/>
+							<input
+								type="range"
+								id="refinementLevelSlider"
+								min="0"
+								max="12"
+								value="12"
+							/>
+						</div>
+						<span class="refinementLevelNote"
+							><strong
+								>Refinement Level can be changed only when Stone Grade is
+								Normal</strong
+							></span
+						>
+					</div>
+					<div class="form-group columns-2">
+						<label for="eqGrade">EQ Grade</label>
+						<div class="custom-select">
+							<select id="eqGrade"> </select>
+							<span class="custom-arrow"></span>
+						</div>
+					</div>
+					<div class="form-group columns-2">
+						<label for="stoneGrade">Stone Grade</label>
+						<div class="custom-select">
+							<select id="stoneGrade"> </select>
+							<span class="custom-arrow"></span>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-group columns-2 no-border center">
+							<label for="empower">Exotic Empower</label>
+							<input type="checkbox" id="empower" checked />
+						</div>
+						<div class="form-group columns-2 no-border center">
+							<label for="infected">Infected</label>
+							<input type="checkbox" id="infected" checked />
+						</div>
+					</div>
+					<div class="infectedOuterWrapper collapsible">
+						<div class="form-group">
+							<label for="infectedAttribute">Infected Attribute</label>
+							<div class="custom-select">
+								<select id="infectedAttribute"> </select>
+								<span class="custom-arrow"></span>
+							</div>
+						</div>
+						<div class="form-group no-border">
+							<label for="infectedLevel">Infected Level</label>
+							<div class="level-wrapper">
+								<input
+									type="number"
+									id="infectedLevel"
+									min="0"
+									max="30"
+									value="20"
+								/>
+								<input
+									type="range"
+									id="infectedLevelSlider"
+									min="0"
+									max="30"
+									value="20"
+								/>
+							</div>
+							<div class="infectedLevel-wrapper2">
+								<p class="infectedLevelSmall-text">
+									Required XP for level <span class="infectedLevelSmall"></span>
+								</p>
+								<span class="infectedLevelRight" id="infectedLevelXp"></span>
+							</div>
+							<div class="infectedLevel-wrapper2">
+								<p class="infectedLevelSmall-text">
+									Required XP for levels 0 -
+									<span class="infectedLevelSmall"></span>
+								</p>
+								<span
+									class="infectedLevelRight"
+									id="infectedLevelXpTotal"
+								></span>
+							</div>
+							<div class="infectedLevel-wrapper2">
+								<p class="infectedLevelSmall-text">
+									Required XP for levels
+									<span class="infectedLevelSmall"></span> - 30
+								</p>
+								<span
+									class="infectedLevelRight"
+									id="infectedLevelXpTotalEnd"
+								></span>
+							</div>
+							<div class="accordion">
+								<button class="accordion__button">show more</button>
+								<div class="accordion__content">
+									<div class="infectedLevel-wrapper2">
+										<p class="infectedLevelSmall-text">
+											Average amount of Fragment Portals for level
+											<span
+												class="infectedLevelSmall infectedLevelSmallFragment"
+											></span>
+										</p>
+										<span
+											class="infectedLevelRight"
+											id="infectedLevelXpFragment"
+										></span>
+									</div>
+									<div class="infectedLevel-wrapper2">
+										<p class="infectedLevelSmall-text">
+											Average amount of Fragment Portals for levels 0 -
+											<span
+												class="infectedLevelSmall infectedLevelSmallFragment"
+											></span>
+										</p>
+										<span
+											class="infectedLevelRight"
+											id="infectedLevelXpFragmentTotal"
+										></span>
+									</div>
+									<div class="infectedLevel-wrapper2">
+										<p class="infectedLevelSmall-text">
+											Average amount of Fragment Portals for levels
+											<span
+												class="infectedLevelSmall infectedLevelSmallFragment"
+											></span>
+											- 30
+										</p>
+										<span
+											class="infectedLevelRight"
+											id="infectedLevelXpFragmentTotalEnd"
+										></span>
+									</div>
+									<div class="infectedLevel-wrapper2">
+										<p style="width: 100%;" class="infectedLevelSmall-text">
+											Fragment Portal has 2000 monsters on average. 1 monster =
+											1 xp.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</section>
+			<section class="section-result">
+				<div class="section-result-content-wrapper">
+					<div class="result-outer-wrapper">
+						<div class="result-wrapper">
+							<div class="result-label">Primary Attribute</div>
+							<div class="result-attribute-wrapper">
+								<div class="result-title" id="PrimaryAttribute"></div>
+								<div class="result-value" id="PrimaryValue"></div>
+							</div>
+						</div>
+						<div class="detail-wrapper">
+							<div class="detail-title">Refinement Level</div>
+							<div class="detail-value" id="PrimaryRefinementLevel"></div>
+						</div>
+						<div class="detail-wrapper">
+							<div class="detail-title">EQ Grade</div>
+							<div class="detail-value" id="PrimaryEqGrade"></div>
+						</div>
+						<div class="detail-wrapper">
+							<div class="detail-title">Stone Grade</div>
+							<div class="detail-value" id="PrimaryStoneGrade"></div>
+						</div>
+						<div class="detail-wrapper">
+							<div class="detail-title">Exotic Empower</div>
+							<div class="detail-value" id="PrimaryEmpower"></div>
+						</div>
+					</div>
+					<div class="result-outer-wrapper collapsible">
+						<div class="result-wrapper">
+							<div class="result-label">Infected Attribute</div>
+							<div class="result-attribute-wrapper">
+								<div class="result-title" id="SecondaryAttribute"></div>
+								<div class="result-value" id="SecondaryValue"></div>
+							</div>
+						</div>
+						<div class="detail-wrapper">
+							<div class="detail-title">Infected Level</div>
+							<div class="detail-value" id="SecondaryInfectedLevel"></div>
+						</div>
+						<div class="detail-wrapper">
+							<div class="detail-title">EQ Grade</div>
+							<div class="detail-value" id="SecondaryEqGrade"></div>
+						</div>
+						<div class="detail-wrapper">
+							<div class="detail-title">Stone Grade</div>
+							<div class="detail-value" id="SecondaryStoneGrade"></div>
+						</div>
+						<div class="detail-wrapper">
+							<div class="detail-title">Exotic Empower</div>
+							<div class="detail-value" id="SecondaryEmpower"></div>
+						</div>
+					</div>
+					<div class="links">
+						<ul>
+							<li>
+								<a
+									href="https://github.com/petrstepvn/cw2-stone-calculator"
+									target="_blank"
+									rel="noopener nofollow"
+								>
+									<img src="./images/iconmonstr-github-1-32.png" alt="github" />
+									<span>Source code</span>
+								</a>
+							</li>
+							<li>
+								<a
+									href="https://celestialworldv2.fandom.com/wiki/Spirit_Stone_system"
+									target="_blank"
+									rel="noopener nofollow"
+									>More info on Wiki</a
+								>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
 </html>
