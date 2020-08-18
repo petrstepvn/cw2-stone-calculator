@@ -36,5 +36,4 @@ export const getInputData = (e) => {
 	inputData.empower = empower.checked;
 	inputData.infected = infected.checked;
 	inputData.infectedAttribute = infectedAttribute.value;
-
 };

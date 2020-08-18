@@ -63,7 +63,13 @@
           <div class="form-group">
             <label for="refinementLevel">Refinement Level</label>
             <div class="level-wrapper">
-              <input type="number" id="refinementLevel" value="12" />
+              <input
+                type="number"
+                id="refinementLevel"
+                min="0"
+                max="12"
+                value="12"
+              />
               <input
                 type="range"
                 id="refinementLevelSlider"
@@ -112,7 +118,13 @@
             <div class="form-group no-border">
               <label for="infectedLevel">Infected Level</label>
               <div class="level-wrapper">
-                <input type="number" id="infectedLevel" value="20" />
+                <input
+                  type="number"
+                  id="infectedLevel"
+                  min="0"
+                  max="30"
+                  value="20"
+                />
                 <input
                   type="range"
                   id="infectedLevelSlider"
